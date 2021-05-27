@@ -35,9 +35,9 @@ function putar() {
 			clearInterval;
 			return;
 		}
-		compImg.setAttribute('src', 'img/' + gambar[i++] + '.png');
+		compImg.setAttribute('src', `img/${gambar[i++]}.png`);
 		if (i == gambar.length) i = 0;
-		playImg.setAttribute('src', 'img/' + gambar[j--] + '.png');
+		playImg.setAttribute('src', `img/${gambar[j--]}.png`);
 		if (j == 0) j = 2;
 	}, 100);
 }
@@ -61,8 +61,8 @@ pilihan.forEach((x) => {
 		setTimeout(() => {
 			document.querySelector('#hasil').innerHTML = hasil;
 
-			playImg.setAttribute('src', 'img/' + pilihanPlayer + '.png')
-			compImg.setAttribute('src', 'img/' + pilihanComputer + '.png');
+			playImg.setAttribute('src', `img/${pilihanPlayer}.png`)
+			compImg.setAttribute('src', `img/${pilihanComputer}.png`);
 
 			if (hasil == 'WIN') {
 				document.getElementById('hasil').style.backgroundColor = '#22F465';
@@ -74,9 +74,5 @@ pilihan.forEach((x) => {
 				document.getElementById('hasil').style.backgroundColor = '#888';
 			}
 		}, 2100);
-
-
-
-
 	})
 })
