@@ -1,2 +1,2 @@
 # JanKenPon
-ini adalah game jankenpon
+the jankenpon game
